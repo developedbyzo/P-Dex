@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  background-image: url('https://www.imgbase.info/images/safe-wallpapers/anime/pokemon/17156_pokemon.jpg')
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+#flexContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20pt;
+  color: antiquewhite;
+}
+
+h1 {
+  -webkit-text-stroke: 1.5px black;
+}
+
+h1 a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+form {
+
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.inputTitle {
+
+  width: 300px;
+  border: 3 solid #000000;
+  margin: 10px 0 0 0;
+}
+
+.inputField {
+  margin: 10px;
+  width: 300px;
+  height: 100px;
+  border: 3 solid #000000;
+}
+
