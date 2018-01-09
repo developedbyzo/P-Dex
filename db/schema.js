@@ -1,9 +1,9 @@
 const mongoose = require('./connection')
 
 const PokieSchema = new mongoose.Schema({
+  name: String,
   url: String,
   index: Number,
-  name: String,
   type1: String,
   type2: String
 })

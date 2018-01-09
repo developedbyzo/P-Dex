@@ -1,0 +1,8 @@
+<form action="/pokies/{{pokie.name}}?_method=put" method="post">
+  <input class='inputName' type="text" name='Pokie[name]' placeholder="Pokemon Name" value="{{pokie.name}}"/>
+  <input class='inputField' type="text" name='Pokie[url]' placeholder="Pokemon Image Url" value="{{pokie.url}}"/>
+  <input class='inputField' type="text" name='Pokie[index]' placeholder="Pokemon Index #" value="{{pokie.index}}"/>
+  <input class='inputField' type="text" name='Pokie[type1]' placeholder="Pokemon Type 1" value="{{pokie.type1}}"/>
+  <input class='inputField' type="text" name='Pokie[type2]' placeholder="Pokemon Type 2" value="{{pokie.type2}}"/>
+  <input class='submit' type="submit" value='Update'>
+</form>

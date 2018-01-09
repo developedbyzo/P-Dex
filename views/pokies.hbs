@@ -1,6 +1,10 @@
-{{#each pokies as |pokie index|}}
+<form class="add" action="/pokies/add">
+  <input type="submit" value="Add A Pokemon">
+</form>
 <div id="pokeContainer">
-  <img src="{{pokie.url}}">
-  <h4>{{pokie.name}}</h4>
+{{#each pokies as |pokie index|}}
+<div>
+  <a href="/pokies/{{pokie.name}}"><img src="{{pokie.url}}"></a>
 </div>
 {{/each}}
+</div>

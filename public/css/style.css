@@ -31,6 +31,45 @@ body {
   color: antiquewhite;
 }
 
+#pokeContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#pokeContainer div {
+  background-color: gray;
+  height: 100px;
+  width: 100px;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+#pokemonContainer {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20pt;
+}
+
+.large {
+  height: 200px;
+  width: 200px;
+  top: 20%;
+  left: 50%;
+  transform: translate(300%, 10%);
+}
+
+img {
+  height: 90px;
+  width: 90px;
+  padding: 5px;
+}
+
 h1 {
   -webkit-text-stroke: 1.5px black;
 }
@@ -53,7 +92,26 @@ form {
   align-items: center;
 
 }
-.inputTitle {
+
+.left {
+  position: absolute;
+  top: 70%;
+  left: 34.5%;
+  transform: translate(-50%, -50%);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20pt;
+}
+
+.right {
+  position: absolute;
+  top: 70%;
+  left: 66%;
+  transform: translate(-50%, -50%);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20pt;
+}
+
+.inputName {
 
   width: 300px;
   border: 3 solid #000000;

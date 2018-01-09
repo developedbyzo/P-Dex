@@ -1,0 +1,31 @@
+
+{{#unless pokie}}
+<h2>Pokemon was not found...</h2>
+{{else}}
+<img class="large" src="{{pokie.url}}">
+<div id="pokemonContainer">
+<h3>#{{pokie.index}} - {{pokie.name}}</h3>
+<h4>{{pokie.type1}} / {{pokie.type2}}</h4>
+</div>
+<div class="left">
+<form action="/pokies/edit/{{pokie.name}}">
+  <input type="submit" value="Edit">
+</form>
+</div>
+<div class="right">
+<form action="/pokies/{{pokie.name}}?_method=delete" method="post">
+  <input type="submit" value="Remove">
+</form>
+</div>
+{{/unless}}
+{{!-- <h2>Update Information</h2>
+<form action='/candidates/{{candidate.name}}?_method=put' method='post'>
+  <input type='text' name='candidate[name]' value='{{candidate.name}}'>
+  <input type='text' name='candidate[year]' value='{{candidate.year}}'>
+  <input type='submit' value='Update'>
+</form>
+
+<h2>Remove Information</h2>
+<form action='/candidates/{{candidate.name}}?_method=delete' method='post'>
+  <input type='submit' value='Remove'>
+</form> --}}
