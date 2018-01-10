@@ -5,6 +5,10 @@ const Pokie = require('../db/schema')
 const router = express.Router()
 
 router.get('/', (req, res) => {
+  res.render('index')
+})
+
+router.get('/pokies', (req, res) => {
   Pokie.find({})
     .then((pokies) => {
       res.render('pokies', {
@@ -57,7 +61,7 @@ router.get('/pokies/edit/:name', (req, res) => {
 router.post('/pokies', (req, res) => {
   Pokie.create(req.body.Pokie)
     .then(pokie => {
-      res.redirect(`/Pokies/${pokie.name}`)
+      res.redirect(`/pokies/${pokie.name}`)
     })
 })
 

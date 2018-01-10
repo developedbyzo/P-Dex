@@ -1,11 +1,15 @@
 body {
-  margin: 0;
-  background-image: url('https://www.imgbase.info/images/safe-wallpapers/anime/pokemon/17156_pokemon.jpg')
+  /* margin: 0; */
+  /* background-image: url('https://www.imgbase.info/images/safe-wallpapers/anime/pokemon/17156_pokemon.jpg') */
+}
+
+nav {
+  background-color: black !important;
 }
 
 .topnav {
   overflow: hidden;
-  background-color: white;
+  background-color: white !important;
 }
 
 .topnav a {
