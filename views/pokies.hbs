@@ -3,8 +3,8 @@
 </form>
 <div class="row">
 {{#each pokies as |pokie index|}}
-<div class="card-panel hoverable col s1">
-  <a href="/pokies/{{pokie.name}}"><img class="responsive-img" src="{{pokie.url}}"></a>
+<div class="card-panel hoverable center col s1">
+  <a href="/pokies/{{pokie.name}}"><img class="responsive-img" src="{{pokie.url}}">{{pokie.name}}</a>
 </div>
 {{/each}}
 </div>
