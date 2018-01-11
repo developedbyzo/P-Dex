@@ -3,20 +3,31 @@
   <head>
     <title>P-Dex</title>
     <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css"> 
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css"> 
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--Import Pokeball Icon for Tab-->
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAC4uLgAz8/PAAAAAAD///8A29vbAAAA/wCmpqYA6+vrAAAAhwAAAOMAkZGRAAAA1AAAAL0AAACmAAAAAAAAAAAAIiIiIiIiIiIiIiN0EGIiIiIjMzdBBqIiIjMzM3QQaiIiMzMzN0EGIiMzMyIidBBiIzMyIiInQQIiIiIiIiIiIiIiIiIiIiIiJVVSIiIlm9IlVVUiIlm8giJVVVVVm80iIlVVVVm82CIiJVVVm82CIiIiJVm80iIiIiIiIiIiIiL4HwAA4AcAAMADAACAAQAAgAEAAAAAAAADwAAAAkAAAAJAAAADwAAAAAAAAIABAACAAQAAwAMAAOAHAAD4HwAA" rel="icon" type="image/x-icon" />
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      main {
+       flex: 1 0 auto;
+      }
+    </style>
   </head>
-  <body class="#c62828 red darken-3">
+  <body class="#212121 grey darken-4">
     <nav>
-      <div class="nav-wrapper #f5f5f5 grey lighten-4">
-        <a href="#" class="brand-logo center black-text">P-Dex</a>
+      <div class="nav-wrapper #c62828 red darken-3">
+        <a href="/" class="brand-logo center white-text">P-Dex</a>
       </div>
     </nav>
     <header>
@@ -24,14 +35,28 @@
     <main>
       {{{body}}}
     </main>
-    <footer>
-  <div class="footer-copyright">
-    <div class="container">
-    © 2014 Copyright Text
-    <a class="grey-text text-lighten-4 right" href="#!">Link</a>
-    </div>
-  </div>
-</footer>
+    <footer class="page-footer #f5f5f5 grey lighten-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="black-text">Instructions</h5>
+                <p class="black-text text-lighten-4">The P-Dex is designed for adding, editing, and removing pokémon information.To get started: Enter the Dex by clicking on the pokéball. Once you have entered the Dex, click on the 'Add A Pokémon' button to add pokémon. Fill out the information on the add page and submit. Once your pokémon has been added to the list, they may be edited by clicking on the specific pokémon. Image links can be found on Bulbapedia. Just right click and select 'Copy Image Address'.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="black-text">Image Source</h5>
+                <ul>
+                  <li><a class="black-text text-lighten-3" href="https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pok%C3%A9mon)">Bulbapedia</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container black-text">
+            © 2018 Copyright P-Dex
+            <a class="black-text text-lighten-4 right" href="https://www.pokemon.com/">Pokemon belong to The Pokemon Company</a>
+            </div>
+          </div>
+        </footer>
     <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
   </body>

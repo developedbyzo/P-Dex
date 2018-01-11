@@ -1,10 +1,10 @@
-<form class="add" action="/pokies/add">
-  <input type="submit" value="Add A Pokemon">
+<form class="center" action="/pokies/add">
+  <input class="#f5f5f5 grey lighten-4 waves-effect waves-light btn white-text" type="submit" value="Add A Pokemon">
 </form>
-<div id="pokeContainer">
+<div class="row">
 {{#each pokies as |pokie index|}}
-<div>
-  <a href="/pokies/{{pokie.name}}"><img src="{{pokie.url}}"></a>
+<div class="card-panel hoverable col s1">
+  <a href="/pokies/{{pokie.name}}"><img class="responsive-img" src="{{pokie.url}}"></a>
 </div>
 {{/each}}
 </div>

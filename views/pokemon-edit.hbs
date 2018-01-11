@@ -1,8 +1,36 @@
-<form action="/pokies/{{pokie.name}}?_method=put" method="post">
-  <input class='inputName' type="text" name='Pokie[name]' placeholder="Pokemon Name" value="{{pokie.name}}"/>
-  <input class='inputField' type="text" name='Pokie[url]' placeholder="Pokemon Image Url" value="{{pokie.url}}"/>
-  <input class='inputField' type="text" name='Pokie[index]' placeholder="Pokemon Index #" value="{{pokie.index}}"/>
-  <input class='inputField' type="text" name='Pokie[type1]' placeholder="Pokemon Type 1" value="{{pokie.type1}}"/>
-  <input class='inputField' type="text" name='Pokie[type2]' placeholder="Pokemon Type 2" value="{{pokie.type2}}"/>
-  <input class='submit' type="submit" value='Update'>
+<form class="center" action="/pokies">
+  <input class="#f5f5f5 grey lighten-4 waves-effect waves-light btn white-text" type="submit" value="Back">
 </form>
+<div class="container">
+<div class="row valign-wrapper">
+  <form class="col s12" action="/pokies/{{pokie.name}}?_method=put" method="post">
+    <div class="row">
+      <div class="input-field col s6">
+        <input class='white-text center inputField' class='validate' type="text" name='Pokie[index]' placeholder="Pokemon Index #" value="{{pokie.index}}"/>
+      </div>
+      <div class="input-field col s6">
+        <input class='white-text center inputName' class='validate' type="text" name='Pokie[name]' placeholder="Pokemon Name" value="{{pokie.name}}"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input class='white-text center inputField' class='validate' type="text" name='Pokie[type1]' placeholder="Pokemon Type 1" value="{{pokie.type1}}"/>
+      </div>
+      <div class="input-field col s6">
+        <input class='white-text center inputField' class='validate' type="text" name='Pokie[type2]' placeholder="Pokemon Type 2" value="{{pokie.type2}}"/>
+      </div>
+    <div class="row">
+      <div class="input-field col s6 offset-s3">
+        <input class='white-text center inputField' class='validate' type="text" name='Pokie[url]' placeholder="Pokemon Image Url" value="{{pokie.url}}"/>
+      </div>
+    </div>
+    <div class="center">
+      <input class='submit' type="submit" value='Update'>
+    </div>
+  </form>
+</div>
+
+
+
+
+
