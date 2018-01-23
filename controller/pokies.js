@@ -11,9 +11,7 @@ router.get('/', (req, res) => {
 router.get('/pokies', (req, res) => {
   Pokie.find({})
     .then((pokies) => {
-      res.render('pokies', {
-        pokies: pokies
-      })
+      res.json(pokies)
     .catch((err) => {
       console.log(err)
     })
